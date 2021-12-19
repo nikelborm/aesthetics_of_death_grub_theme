@@ -2,13 +2,13 @@
 
 # Grub2 Theme
 ##########################################################################
-# This is taken from the Tela grub theme and is therefore licensed 
+# This is taken from the Tela grub theme and is therefore licensed
 # under the GNU General Public License
 ##########################################################################
 
 ROOT_UID=0
 THEME_DIR="/usr/share/grub/themes"
-THEME_NAME=Sekiro
+THEME_NAME=Aesthetics_of_death
 
 MAX_DELAY=20                                        # max delay for user to enter root password
 
@@ -42,7 +42,10 @@ prompt () {
 }
 
 # Welcome message
-prompt -s "\n\t************************\n\t*  ${THEME_NAME} - Grub2 Theme  *\n\t************************"
+prompt -s "\n\t***************************************\n\t*  ${THEME_NAME} - Grub2 Theme  *\n\t***************************************"
+prompt -w "\n[ Warning! ] -> Make sure that your current working directory is repository root!\n"
+
+read -n 1 -p "Press Enter if it is, or Ctrl+C if it is not:" something
 
 # Check command avalibility
 function has_command() {

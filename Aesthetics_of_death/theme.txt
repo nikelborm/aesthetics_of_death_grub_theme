@@ -1,0 +1,39 @@
+title-text: ""
+title-font: "Dersu Uzala brush Regular 72"
+desktop-image: "mathew-macquarrie-u6OnpbMuZAs-unsplash_3456x2160.png"
+terminal-font: "Fira Code Regular 20"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ boot_menu {
+    left = 0%
+    width = 45%
+    top = 15%
+    height = 1260
+    item_height = 134
+    item_padding = 0
+    icon_width = 0
+    icon_height = 0
+    item_icon_space = 324
+    item_spacing = 5
+    item_font =  "Dersu Uzala brush Regular 72"
+    item_color = "#000000"
+    selected_item_font = "Dersu Uzala brush Regular 72"
+    selected_item_color = "#afc3bd"
+    selected_item_pixmap_style = "select_*.png"
+}
+
++ label {
+    id = "__timeout__"
+    left = 42%
+    top = 90%
+    width = 300
+    height = 20
+    font = "Fira Code Regular 20"
+    color = "#ffffff"
+    align = "center"
+    text = "You will die in %d seconds"
+}
